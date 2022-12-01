@@ -1,0 +1,54 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:18592",
+      "sslPort": 44326
+    },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  },
+  "profiles": {
+    
+    "CrudAnuncioVeiculo.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+
+        //Geral
+        "API_VERSION": "v1",
+        "APPLICATION_NAME": "Cliente",
+        "APPLICATION_TITLE": "WebMotors.CrudAnuncio - Teste",
+        "APPLICATION_DESCRIPTION": "API de acesso aos serviços de teste WebMotors",
+
+        //Sql
+        "SQLSERVER_HOST": "127.0.0.1",
+        "SQLSERVER_DATABASE": "teste_webmotors",
+        "SQLSERVER_USER": "sa",
+        "SQLSERVER_ADDITIONAL_CONFIGS": "MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=20;",
+        "SQLSERVER_PASSWORD": "P@ssD@cker123"
+
+
+      },
+      "applicationUrl": "https://localhost:7081;http://localhost:5081",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
